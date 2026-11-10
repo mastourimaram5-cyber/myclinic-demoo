@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévision de Panne - Tracteur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .table-container {
+            width: 100%;
+            max-width: 500px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        /* Style kima l'exemple mte3ek (Vert w Blanc) */
+        tr:nth-child(even) {
+            background-color: #28a745;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: #218838;
+            color: white;
+        }
+        td:first-child {
+            font-weight: bold;
+            width: 45%;
+        }
+        td:last-child {
+            background-color: #ffffff;
+            color: #333;
+            font-weight: bold;
+            text-align: center;
+        }
+        .risk-badge {
+            background-color: #ffc107;
+            color: #000;
+            padding: 4px 12px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Prévision de Panne pour un Tracteur</h2>
+
+    <div class="table-container">
+        <table>
+            <tr>
+                <td>ID du Tracteur</td>
+                <td>TR-001</td>
+            </tr>
+            <tr>
+                <td>Nom & Prénom</td>
+                <td>Yassine Macuah</td>
+            </tr>
+            <tr>
+                <td>Volume du Moteur</td>
+                <td>6.8 L</td>
+            </tr>
+            <tr>
+                <td>Température</td>
+                <td>90 °C</td>
+            </tr>
+            <tr>
+                <td>Panne Prédite</td>
+                <td>35 jours</td>
+            </tr>
+            <tr>
+                <td>Niveau de Risque</td>
+                <td><span class="risk-badge">Moyen</span></td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
